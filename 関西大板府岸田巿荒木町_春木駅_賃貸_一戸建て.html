@@ -1,73 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"> <html lang="en">
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Detial</title>
-      <style>
-        #imageContainer {
-          display: flex;
-          flex-wrap: wrap;
-    }
-
-    .image {
-      margin: 10px;
-      cursor: pointer;
-    }
-
-    .image img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-  <h2>选择要显示的图像3：</h2>
-
-  <div id="imageContainer"></div>
-
-  <script>
-    // 替换为你的图像文件夹路径
-    const folderPath = 'lapw.github.io/photo;
-
-    // 替换为你的图像文件扩展名（例如：.jpg、.png等）
-    const imageExtension = '.jpg';
-
-    const imageContainer = document.getElementById('imageContainer');
-
-    // 获取文件夹中的所有图像
-    function getImages() {
-      fetchImages().then(images => {
-        images.forEach(image => {
-          const imgElement = document.createElement('div');
-          imgElement.classList.add('image');
-          imgElement.innerHTML = `<img src="${folderPath}/${image}" alt="${image}" onclick="toggleImage(this)">`;
-          imageContainer.appendChild(imgElement);
-        });
-      });
-    }
-
-    // 异步获取图像列表
-    async function fetchImages() {
-      const response = await fetch(folderPath);
-      const data = await response.json();
-      return data.filter(file => file.endsWith(imageExtension));
-    }
-
-    // 切换图像的显示状态
-    function toggleImage(imgElement) {
-      imgElement.classList.toggle('selected');
-    }
-
-    // 初始化页面
-    getImages();
-  </script>
-
+      <meta charset="utf-8"> <html lang="ja">
+      <title>関西大板府岸田巿荒木町_春木駅_賃貸_一戸建て1</title>
+  </head>
+  <body>
+  <img src="lapw.github.io/photo/japan1.jpg" alt="描述文本">  
+  
 </body>
 </html>
 </html>
